@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form method="post"  onsubmit="return validInfo(event)">
+        <div class="container">
+          <label>First Name</label>
+          <input type="text" placeholder="Your Name..."  id="firstName"/>
+          <p class="hide">Invalid input !</p>
+          <label>Last name</label>
+          <input type="text" placeholder="Your Last Name..." id="lastName" />
+          <p class="hide" >Invalid input!</p>
+          <label>Country</label>
+          <select>
+            <option value="">Australia</option>
+            <option value="1">Canada</option>
+            <option value="2">Denmark</option>
+            <option value="3">Sweden</option>
+          </select>
+          <label>Subject</label>
+          <textarea id="subject" placeholder="write something..."></textarea>
+          <button id="submit">Submit</button>
+        </div>
+      </form>
+      <div class="modal hide">
+        <p id='message'>Your information was successfully registered!</p>
+        <br>
+        <button id="close">close</button>
+      </div>
+    </div>
+    <script src="./1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+$color-white:#ffff;
+$color-green: #068d33;
+$border-color : silver;
+$form-color :#f0f0f0;
+body{
+    margin: 0;
+    font-family:'Segoe UI';
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+@mixin color-items($color) {
+    background-color: $color;
+    border: 1px solid $border-color;
+    padding: .8rem;
+    margin: 1rem 0;
+    width: 93%;
+   
+  
+}
+input {
+    @include color-items($color-white)
+}
+select{
+    @include color-items($color-white);
+    width:100%;
+}
+textarea{
+    @include color-items($color-white);
+    width:93%;
+}
+button{
+    background-color: $color-green;
+    color: $color-white;
+    padding: .8rem 1rem;
+    border: 0;
+    border-radius: 4px;
+}
+label{
+    display: block;
+}
+form{
+    display: block;
+    background-color:$form-color ;
+    width: 50%;
+    padding: 5%;
+    margin-top: 3%;
+    border-radius: 8px;
+    position: relative;
+}
+#subject{
+    height: 5rem;
+}
+.modal{
+    @include color-items($color-white);
+    width:30%;
+    position: absolute;
+    color: $color-green;
+    border-radius: 8px;
+
+    animation:move .5s linear 0s 1 forwards ;
+    // opacity: 0;
+}
+@keyframes move {
+    from{
+        top: 0%;
+        left: 18%;
+    }
+    to{
+        top:18%;
+        left: 18%;
+        box-shadow: -2px 0px 8px 5px #d3d3d3;
+    }
+}
+.hide{
+    display: none;
+}
+.invalid{
+    border-color: #eb5353;
+    
+
+}
+.disabled{
+    cursor:not-allowed;
+}
+#message{
+    color: $color-green;
+}
+P{
+ color: #eb5353;
+}

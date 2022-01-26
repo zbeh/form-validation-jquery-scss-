@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI';
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+input {
+  background-color: #ffff;
+  border: 1px solid silver;
+  padding: .8rem;
+  margin: 1rem 0;
+  width: 93%;
+}
+
+select {
+  background-color: #ffff;
+  border: 1px solid silver;
+  padding: .8rem;
+  margin: 1rem 0;
+  width: 93%;
+  width: 100%;
+}
+
+textarea {
+  background-color: #ffff;
+  border: 1px solid silver;
+  padding: .8rem;
+  margin: 1rem 0;
+  width: 93%;
+  width: 93%;
+}
+
+button {
+  background-color: #068d33;
+  color: #ffff;
+  padding: .8rem 1rem;
+  border: 0;
+  border-radius: 4px;
+}
+
+label {
+  display: block;
+}
+
+form {
+  display: block;
+  background-color: #f0f0f0;
+  width: 50%;
+  padding: 5%;
+  margin-top: 3%;
+  border-radius: 8px;
+  position: relative;
+}
+
+#subject {
+  height: 5rem;
+}
+
+.modal {
+  background-color: #ffff;
+  border: 1px solid silver;
+  padding: .8rem;
+  margin: 1rem 0;
+  width: 93%;
+  width: 30%;
+  position: absolute;
+  color: #068d33;
+  border-radius: 8px;
+  -webkit-animation: move .5s linear 0s 1 forwards;
+          animation: move .5s linear 0s 1 forwards;
+}
+
+@-webkit-keyframes move {
+  from {
+    top: 0%;
+    left: 18%;
+  }
+  to {
+    top: 18%;
+    left: 18%;
+    -webkit-box-shadow: -2px 0px 8px 5px #d3d3d3;
+            box-shadow: -2px 0px 8px 5px #d3d3d3;
+  }
+}
+
+@keyframes move {
+  from {
+    top: 0%;
+    left: 18%;
+  }
+  to {
+    top: 18%;
+    left: 18%;
+    -webkit-box-shadow: -2px 0px 8px 5px #d3d3d3;
+            box-shadow: -2px 0px 8px 5px #d3d3d3;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.invalid {
+  border-color: #eb5353;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+#message {
+  color: #068d33;
+}
+
+P {
+  color: #eb5353;
+}
+/*# sourceMappingURL=main.css.map */

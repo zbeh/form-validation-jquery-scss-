@@ -1,0 +1,13 @@
+@mixin justifyer($x,$y,$pseudo:false) {
+    width: 100%;
+    @if $pseudo {
+        padding-top: $y*1%/$x*1%;
+    }
+}
+img{
+    @include justifyer(3%,100% ,$pseudo:true )
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
